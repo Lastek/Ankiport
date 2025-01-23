@@ -1,10 +1,11 @@
-# File Format and Structure Documentation for Anki Card Processing Program
-___
-> See `prompts.txt` for how to generate cards with an LLM
-___
+# File Format and Structure Documentation
 
 > Documentation generated with ChatGPT and edited by Lastek 
 
+___
+- [x] See `prompts.txt` for how to generate cards with an LLM.
+- [x] Check cs430 example files for how it should look and to expect.
+___
 
 This document explains the file formats and structures required for the Anki card processing program. Follow these guidelines to correctly format input and tag files, and interpret the output.
 
