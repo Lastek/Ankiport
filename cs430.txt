@@ -1,0 +1,265 @@
+Card 1:
+
+Q: What is a database?
+A: A database is a large, integrated collection of data that models a real-world enterprise, including entities (e.g., students, courses) and relationships (e.g., Lady Gaga is taking CS 430).
+Card 2:
+
+Q: What is a DBMS?
+A: A Database Management System (DBMS) is a software package designed to store and manage databases.
+Card 3:
+
+Q: What are some examples of enterprise information stored in databases?
+A: Examples include:
+
+    Sales: customers, products, purchases
+
+    Accounting: payments, receipts, assets
+
+    Human Resources: employee information, salaries, payroll taxes.
+
+Card 4:
+
+Q: What were the problems with early database applications built on file systems?
+A: Problems included:
+    Size of datasets
+
+    Data redundancy and inconsistency
+
+    Difficulty in accessing data
+
+    Data isolation
+
+    Integrity problems: system crashes
+
+    Atomicity issues: Things need to complete in entirety or not at all
+
+    Concurrent access issues
+
+    Security problems
+
+Card 5:
+
+Q: What is data redundancy and inconsistency?
+A: Data redundancy and inconsistency occur when data is stored in multiple file formats, leading to duplication of information in different files.
+Card 6:
+
+Q: What is data isolation?
+A: Data isolation refers to the problem of having data stored in multiple files and formats, making it difficult to access and manage.
+Card 7:
+
+Q: What are integrity problems in databases?
+A: Ensuring that the intended changes are made in correct places
+Card 8:
+
+Q: What is the atomicity of updates?
+A: Atomicity of updates ensures that a set of operations within a transaction are treated as a single "unit," which either completely occurs or does not occur at all. For example, transferring funds from one account to another should either complete fully or not happen at all.
+Card 9:
+
+Q: What are the issues with concurrent access by multiple users?
+A: Uncontrolled concurrent access can lead to inconsistencies. For example, two people reading a balance (say 100) and updating it by withdrawing money (say 10 and 50 respectively) at the same time can cause problems.
+Card 10:
+
+Q: What is a data model?
+A: A data model is a collection of tools for describing data, data relationships, data semantics, and data constraints.
+Card 11:
+
+Q: What is the relational model?
+A: The relational model is a data model where the main concept is a relation, which is a table with rows and columns. Every relation has a schema that describes the columns and their types.
+
+Card 12:
+
+Q: What are the three levels of abstraction in a database system?
+A: The three levels are:
+
+    Physical level: Describes how a record is stored.
+
+    Logical level: Describes the data stored in the database and the relationships among the data.
+
+    View level: Application programs hide details of data types, and views can hide information for security purposes.
+
+Card 13:
+
+Q: What is the difference between logical schema and physical schema?
+A:
+
+    Logical schema: The overall logical structure of the database (e.g., information about customers and accounts in a bank).
+
+    Physical schema: The overall physical structure of the database (how data is stored on disk).
+
+Card 14:
+Q: What is a relation in a database?
+A: A set of relation amongst set of rows such as the a Student Relation being a relation of student id, name, login, age, and gpa. Think of it as a table where the table columns are the common relation amongst the rows.
+
+Card 14:
+Q: What is an instance in a database?
+A: 
+	An instance is the actual content of the database at a particular point in time, analogous to the value of a variable in a program. They are the actual rows.
+	An instance can change over time. Each row is an instance.
+
+Card 15:
+Q: What is the cardinality.
+A: The number of rows.
+
+Card 15:
+
+Q: What is data independence?
+A: Data independence refers to the ability to change the schema at one level of the database system without affecting the schema at the next higher level. It includes:
+
+    Logical Data Independence: Protection from changes in the logical structure of data.
+
+    Physical Data Independence: Protection from changes in the physical structure of data.
+
+Card 16:
+Q: What are the 3 levels of abstraction?
+A: View, Logical or Conceptual Schema, and Physical Schema.
+
+Card 16:
+
+Q: What is query processing?
+A: Query processing is the process of retrieving data from a database using queries expressed in query languages like Relational calculus and Relational algebra.
+Card 17:
+
+Q: What is a transaction in a database?
+A: A transaction is a collection of operations that performs a single logical function in a database application.
+
+Card 18:
+
+Q: What is the role of the transaction-management component?
+A: The transaction-management component ensures that the database remains in a consistent (correct) state despite system failures (e.g., power failures) and transaction failures.
+Card 19:
+
+Q: What does the concurrency-control manager do?
+A: The concurrency-control manager controls the interaction among concurrent transactions to ensure the consistency of the database.
+Card 20:
+
+Q: What is the view level in a database system?
+A: The view level is the highest level of abstraction in a database system, where application programs hide details of data types, and views can hide information (e.g., an employee’s salary) for security purposes.
+
+Card 21:
+
+Q: What is the difference between data and information in the context of databases?
+A: Data refers to raw facts or figures, while information is data that has been processed and organized to provide meaning and context.
+Card 22:
+
+Q: What is a schema in the context of databases?
+A: A schema is the overall design or structure of a database, including the logical and physical organization of data.
+Card 23:
+
+Q: What is the difference between logical data independence and physical data independence?
+A:
+
+    Logical Data Independence: Protects applications from changes in the logical structure of the database (e.g., adding a new table).
+
+    Physical Data Independence: Protects applications from changes in the physical storage of the database (e.g., changing the file structure on disk).
+
+Card 24:
+
+Q: What is a view in a database system?
+A: A view is a virtual table that is derived from one or more base tables. It can hide certain data for security or simplify complex queries.
+Card 25:
+
+Q: What is the role of the DBMS in ensuring data integrity?
+A: The DBMS ensures data integrity by enforcing integrity constraints (e.g., ensuring that an account balance is always greater or equal to zero) and by managing transactions to maintain consistency.
+Card 26:
+
+Q: What is the difference between a database and a DBMS?
+A:
+
+    Database: A collection of related data.
+
+    DBMS: The software that manages and interacts with the database.
+
+Card 27:
+
+Q: What is the significance of the relational model in databases?
+A: The relational model is significant because it provides a simple and intuitive way to represent data using tables (relations) and allows for powerful querying capabilities using relational algebra and calculus.
+Card 28:
+
+Q: What is the difference between a tuple and an attribute in the relational model?
+A:
+
+    Tuple: A row in a table, representing a single record.
+
+    Attribute: A column in a table, representing a specific property or field of the data.
+
+Card 28:
+Q: What are the ACID Properties of a Transaction?
+A:
+	Atomicity: All or nothing
+	Consistency: When a transaction is executed in isolation, it will result in a consistent database
+	Isolation: Concurrent transactions should appear as if each is executed in isolation
+	Durability: All changes made by transaction completes successfully to survive failures
+
+Card 29:
+
+Q: What is the purpose of the physical level of abstraction in a database system?
+A: The physical level describes how data is actually stored on the storage medium (e.g., disk), including details like file structures and indexing methods (is it sorted? is it unsorted? etc).
+Card 30:
+
+Q: What is the purpose of the logical level of abstraction in a database system?
+A: The logical level describes what data is stored in the database and the relationships among the data, without specifying how it is physically stored.
+Card 31:
+
+Q: What is the difference between a database schema and a database instance?
+A:
+
+    Schema: The overall design or structure of the database (e.g., tables, columns, relationships).
+
+    Instance: The actual data stored in the database at a particular point in time.
+
+Card 32:
+
+Q: What is the role of the DBMS in managing concurrent access?
+A: The DBMS ensures that concurrent transactions do not interfere with each other, maintaining data consistency through mechanisms like locking and isolation levels.
+Card 33:
+
+Q: What is the difference between relational algebra and relational calculus?
+A:
+
+    Relational Algebra: A procedural query language that specifies how to retrieve data (e.g., using operations like select, project, join).
+
+    Relational Calculus: A non-procedural query language that specifies what data to retrieve without specifying how to retrieve it.
+
+Card 34:
+
+Q: What is the purpose of the concurrency-control manager in a DBMS?
+A: The concurrency-control manager ensures that multiple transactions can execute simultaneously without leading to inconsistencies in the database.
+Card 35:
+
+Q: What is the difference between a physical schema and a logical schema?
+A:
+
+    Physical Schema: Describes how data is stored on disk (e.g., file structures, indexing).
+
+    Logical Schema: Describes the logical structure of the database (e.g., tables, relationships).
+
+Card 36:
+
+Q: What is the significance of the view level in a database system?
+A: The view level allows different users to see different representations of the same data, which can simplify complex data structures and enhance security by hiding sensitive information.
+Card 37:
+
+Q: What is the difference between a database instance and a database state?
+A:
+
+    Database Instance: The actual data stored in the database at a particular point in time.
+
+    Database State: The current set of data in the database, which can change over time as data is updated.
+
+Card 38:
+
+Q: What is the role of the DBMS in ensuring atomicity of transactions?
+A: The DBMS ensures atomicity by guaranteeing that all operations within a transaction are completed successfully, or none are, even in the event of a system failure.
+Card 39:
+
+Q: What is the difference between a database and a file system?
+A:
+
+    Database: A structured collection of data managed by a DBMS, which provides mechanisms for data integrity, concurrency control, and querying.
+
+    File System: A simpler way to store data in files, but lacks the advanced features of a DBMS, leading to issues like data redundancy and inconsistency.
+
+Card 40:
+
+Q: What is the purpose of the transaction-management component in a DBMS?
+A: The transaction-management component ensures that the database remains in a consistent state, even in the event of system failures or transaction failures, by managing the execution of transactions.

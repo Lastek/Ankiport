@@ -1,0 +1,13 @@
+{
+    "database": "database",
+    "DBMS": "DBMS",
+    "transaction": "transactions",
+    "relational model": "relational_model",
+    "data independence": "data_independence",
+    "abstraction": "data_abstraction",
+    "integrity": "data_integrity",
+    "schema": "schema",
+    "query": "query_processing",
+    "concurrency": "concurrency_control",
+    "atomicity": "ACID_properties"
+}
