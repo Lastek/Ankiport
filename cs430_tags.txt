@@ -9,5 +9,8 @@
     "schema": "schema",
     "query": "query_processing",
     "concurrency": "concurrency_control",
-    "atomicity": "ACID_properties"
+    "atomicity": "ACID_properties",
+    "relation": "database_relations",
+    "attribute": "database_attributes",
+    "key": "database_keys"
 }

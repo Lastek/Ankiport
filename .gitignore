@@ -1,0 +1,4 @@
+*.txt
+!cs430.txt
+!cs430_tags.txt
+!cs430_anki.txt

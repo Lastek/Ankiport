@@ -40,22 +40,24 @@ def generate_tags(answer, keywords_to_tags):
             tags.add(tag)
     return " ".join(sorted(tags))
 
-
-def generate_anki_file(filename:str):
-
-    if filename.endswith('.txt'):
-        input_file = filename
-    elif filename.find('.') != -1:
+def check_ext(string:str) -> str|int:
+    if string.endswith('.txt'):
+        input_file = string
+    elif string.find('.') != -1:
         print("File extension must be '.txt'")
         sys.exit(-1)
     else:
         input_file = filename + '.txt'
+    return input_file
 
+def processor_html_tags(data:)
+def generate_anki_file(filename:str, tagfilename:str):
+
+    input_file = check_ext(filename)
     contents = open_file(input_file)
-
-    input_file_name_no_ext = input_file.removesuffix('.txt')
-    tags_file = f'{input_file_name_no_ext}_tags.txt'
-    keywords_to_tags = load_tags(tags_file)
+    
+    tag_file = check_ext(tagfilename)
+    keywords_to_tags = load_tags(tag_file)
 
     formatted = strip_strings(contents)
 
@@ -81,6 +83,7 @@ def generate_anki_file(filename:str):
         c += f'\t{tags}\n'
         output.append(c)
 
+    input_file_name_no_ext = input_file.removesuffix('.txt')
     write_file(f'{input_file_name_no_ext}_anki.txt', output)
 
 
@@ -89,9 +92,9 @@ if __name__ == '__main__':
     print("Current working directory:", os.getcwd())
 
     # Load JSON data from the file
-    if len(sys.argv) != 2:
+    if len(sys.argv) != 3:
         print("Args: file.txt")
         sys.exit(1)
 
     print("Generating file") 
-    generate_anki_file(sys.argv[1])
+    generate_anki_file(sys.argv[1], sys.argv[2])
