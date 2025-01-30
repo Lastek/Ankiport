@@ -47,10 +47,12 @@ def check_ext(string:str) -> str|int:
         print("File extension must be '.txt'")
         sys.exit(-1)
     else:
-        input_file = filename + '.txt'
+        input_file = string + '.txt'
     return input_file
 
-def processor_html_tags(data:)
+def processor_html_tags(data):
+    pass
+
 def generate_anki_file(filename:str, tagfilename:str):
 
     input_file = check_ext(filename)
@@ -93,7 +95,7 @@ if __name__ == '__main__':
 
     # Load JSON data from the file
     if len(sys.argv) != 3:
-        print("Args: file.txt")
+        print("Args: file.txt tags.txt")
         sys.exit(1)
 
     print("Generating file") 
